@@ -256,7 +256,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
 
 /* ── HERO ── */
 #hero {
-  min-height: 100dvh;
+  min-height: unset;
   padding-top: var(--nav-h);
   display: flex;
   flex-direction: column;
@@ -270,7 +270,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: start;
 }
 .hero-content { max-width: 520px; }
 .hero-content h1 { margin-bottom: 1.25rem; }
@@ -288,13 +288,13 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
   border-radius: 16px;
   overflow: hidden;
   width: 100%;
-  aspect-ratio: 16/9;
   background: #000;
   box-shadow: 0 8px 32px rgba(0,0,0,0.12);
 }
 .hero-video {
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-height: 380px;
   object-fit: cover;
   display: block;
 }
