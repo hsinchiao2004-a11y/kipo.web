@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KIPO Thermal — 精密散熱模組解決方案</title>
+  <title>科普科技股份有限公司 Kipotec Corporation — 驅動科技之心，冷卻無限可能</title>
   <link rel="preconnect" href="https://fonts.bunny.net" />
   <link href="https://fonts.bunny.net/css?family=geist:300,400,500,600,700&family=geist-mono:400,500" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
@@ -14,17 +14,23 @@
   <nav id="nav">
     <div class="nav-inner">
       <a href="#" class="logo">
-        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-          <rect width="28" height="28" rx="6" fill="#2563EB"/>
-          <path d="M7 14h14M14 7v14M9 9l10 10M19 9L9 19" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
-        </svg>
-        <span>KIPO</span><span class="logo-sub">Thermal</span>
+        <img src="https://kipotec.com.tw/tc/images/528d468a1c695edd4f8a2b72617471c5.png"
+             alt="科普科技 Kipotec"
+             class="logo-img"
+             onerror="this.style.display='none';document.getElementById('logo-fallback').style.display='flex'" />
+        <span id="logo-fallback" class="logo-fallback" style="display:none">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+            <rect width="28" height="28" rx="6" fill="#2563EB"/>
+            <path d="M7 14h14M14 7v14M9 9l10 10M19 9L9 19" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span>科普科技</span>
+        </span>
       </a>
       <ul class="nav-links">
-        <li><a href="#solutions">解決方案</a></li>
+        <li><a href="#solutions">產品</a></li>
         <li><a href="#technology">技術</a></li>
-        <li><a href="#specs">規格</a></li>
-        <li><a href="#clients">客戶</a></li>
+        <li><a href="#about">關於我們</a></li>
+        <li><a href="#clients">合作夥伴</a></li>
         <li><a href="#contact" class="btn-nav">聯繫我們</a></li>
       </ul>
       <button class="nav-hamburger" aria-label="選單" onclick="toggleMenu()">
@@ -32,10 +38,10 @@
       </button>
     </div>
     <div class="nav-mobile" id="mobileMenu">
-      <a href="#solutions" onclick="toggleMenu()">解決方案</a>
+      <a href="#solutions" onclick="toggleMenu()">產品</a>
       <a href="#technology" onclick="toggleMenu()">技術</a>
-      <a href="#specs" onclick="toggleMenu()">規格</a>
-      <a href="#clients" onclick="toggleMenu()">客戶</a>
+      <a href="#about" onclick="toggleMenu()">關於我們</a>
+      <a href="#clients" onclick="toggleMenu()">合作夥伴</a>
       <a href="#contact" onclick="toggleMenu()">聯繫我們</a>
     </div>
   </nav>
@@ -44,12 +50,12 @@
   <section id="hero">
     <div class="hero-inner">
       <div class="hero-content">
-        <p class="eyebrow">次世代散熱科技</p>
-        <h1>精密導熱，<br/>極限性能</h1>
-        <p class="hero-sub">KIPO Thermal 為高功率電子設備提供模組化散熱解決方案，從 AI 伺服器到工業控制系統，熱阻低至 0.08°C/W。</p>
+        <p class="eyebrow">25+ 年散熱技術深耕</p>
+        <h1>驅動科技之心，<br/>冷卻無限可能</h1>
+        <p class="hero-sub">科普科技深耕散熱領域逾 25 年，從筆電散熱模組到伺服器液冷系統，為全球一流電子品牌提供高效、輕量、低碳的熱管理解決方案。</p>
         <div class="hero-ctas">
-          <a href="#contact" class="btn-primary">取得報價</a>
-          <a href="#technology" class="btn-ghost">查看技術</a>
+          <a href="#contact" class="btn-primary">聯繫業務</a>
+          <a href="#solutions" class="btn-ghost">查看產品</a>
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
@@ -67,68 +73,84 @@
           </div>
           <div class="thermal-stats">
             <div class="stat-pill">
-              <span class="stat-label">核心溫度</span>
-              <span class="stat-val" id="tempVal">42.3°C</span>
-            </div>
-            <div class="stat-pill">
               <span class="stat-label">散熱效率</span>
-              <span class="stat-val">98.6%</span>
+              <span class="stat-val">高效導熱</span>
             </div>
             <div class="stat-pill">
-              <span class="stat-label">熱阻</span>
-              <span class="stat-val">0.08°C/W</span>
+              <span class="stat-label">設計理念</span>
+              <span class="stat-val">輕量化</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-label">環保承諾</span>
+              <span class="stat-val">低碳綠能</span>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="hero-metrics">
-      <div class="metric"><span class="metric-num">500W+</span><span class="metric-label">最大散熱功率</span></div>
+      <div class="metric"><span class="metric-num">25+</span><span class="metric-label">年產業深耕</span></div>
       <div class="metric-div"></div>
-      <div class="metric"><span class="metric-num">−40°C</span><span class="metric-label">工作溫度下限</span></div>
+      <div class="metric"><span class="metric-num">1,000+</span><span class="metric-label">專業員工人數</span></div>
       <div class="metric-div"></div>
-      <div class="metric"><span class="metric-num">15年</span><span class="metric-label">產品壽命保障</span></div>
+      <div class="metric"><span class="metric-num">13億</span><span class="metric-label">資本額（新台幣）</span></div>
       <div class="metric-div"></div>
-      <div class="metric"><span class="metric-num">IP67</span><span class="metric-label">防塵防水等級</span></div>
+      <div class="metric"><span class="metric-num">3</span><span class="metric-label">全球據點</span></div>
     </div>
   </section>
 
   <!-- ───── SOLUTIONS ───── -->
   <section id="solutions">
     <div class="section-inner">
-      <h2>散熱解決方案</h2>
-      <p class="section-sub">針對不同應用場景，提供完整的模組化散熱產品線。</p>
+      <h2>產品線</h2>
+      <p class="section-sub">涵蓋消費性電子到企業級伺服器的完整散熱解決方案。</p>
       <div class="solutions-grid">
+        <!-- Featured -->
         <div class="sol-card sol-featured">
-          <img src="https://picsum.photos/seed/thermal-heatsink-industrial/800/500" alt="液冷散熱模組" class="sol-img" />
+          <img src="https://kipotec.com.tw/tc/images/ed273b71d82e9f13961d1016afd9f8ea.jpg"
+               alt="筆記型電腦散熱模組"
+               class="sol-img"
+               onerror="this.src='https://picsum.photos/seed/laptop-cooling-copper/800/500'" />
           <div class="sol-body">
-            <span class="sol-tag">旗艦產品</span>
-            <h3>液冷散熱模組 KL-Series</h3>
-            <p>針對 AI 訓練叢集與高密度伺服器設計，單模組可處理 500W 熱耗散，搭配微流道銅板技術實現極低熱阻。</p>
+            <span class="sol-tag">核心產品</span>
+            <h3>筆電 / 電競散熱模組</h3>
+            <p>大功率容量設計，低熱阻、安全穩定。適用於主流筆記型電腦及高效能電競機型，提供均溫板與熱管整合解決方案。</p>
             <a href="#contact" class="btn-text">索取資料 →</a>
           </div>
         </div>
+        <!-- Card 2 -->
         <div class="sol-card">
-          <img src="https://picsum.photos/seed/copper-heatsink-module/600/400" alt="熱管散熱器" class="sol-img" />
+          <img src="https://kipotec.com.tw/tc/images/b79f50aa0c2fe707e23905ad5f97f1fd.jpg"
+               alt="桌上型電腦 AIO 散熱模組"
+               class="sol-img"
+               onerror="this.src='https://picsum.photos/seed/desktop-aio-cooling/600/400'" />
           <div class="sol-body">
-            <h3>熱管散熱器 KH-Series</h3>
-            <p>均溫板搭配複合熱管，適用於空間受限的嵌入式系統與邊緣運算裝置。</p>
+            <h3>桌上型 AIO 散熱模組</h3>
+            <p>一體成型整合設計，適用於 All-in-One 桌上型電腦，提供高效靜音散熱體驗。</p>
             <a href="#contact" class="btn-text">索取資料 →</a>
           </div>
         </div>
+        <!-- Card 3 -->
         <div class="sol-card">
-          <img src="https://picsum.photos/seed/phase-change-cooling-electronics/600/400" alt="相變散熱系統" class="sol-img" />
+          <img src="https://kipotec.com.tw/tc/images/5e80b3fc2ba687381cbf39aaa472e434.png"
+               alt="伺服器散熱系統"
+               class="sol-img"
+               onerror="this.src='https://picsum.photos/seed/server-rack-cooling/600/400'" />
           <div class="sol-body">
-            <h3>相變散熱系統 KP-Series</h3>
-            <p>採用兩相流技術，在無外部動力的條件下達到最大導熱效率，適用於軍事與航太應用。</p>
+            <h3>伺服器散熱系統</h3>
+            <p>涵蓋氣冷與液冷兩大系統，針對高密度伺服器與 AI 運算叢集提供企業級散熱方案，低碳足跡。</p>
             <a href="#contact" class="btn-text">索取資料 →</a>
           </div>
         </div>
+        <!-- Card 4 -->
         <div class="sol-card">
-          <img src="https://picsum.photos/seed/industrial-cooling-rack/600/400" alt="機架冷卻系統" class="sol-img" />
+          <img src="https://kipotec.com.tw/tc/images/65f4bafba467b98805e9f10664265c61.png"
+               alt="散熱風扇"
+               class="sol-img"
+               onerror="this.src='https://picsum.photos/seed/cooling-fan-blower/600/400'" />
           <div class="sol-body">
-            <h3>機架冷卻系統 KR-Series</h3>
-            <p>整合式機架背板冷卻，與主流 1U/2U 伺服器規格相容，降低 PUE 至 1.1 以下。</p>
+            <h3>高效能散熱風扇</h3>
+            <p>高風量、高靜壓、低噪音設計；另提供低功耗靜音風扇系列，適用於對噪音敏感的應用環境。</p>
             <a href="#contact" class="btn-text">索取資料 →</a>
           </div>
         </div>
@@ -140,118 +162,85 @@
   <section id="technology">
     <div class="section-inner">
       <div class="tech-header">
-        <h2>核心技術</h2>
-        <p class="section-sub">三項專利技術的協同整合，構成 KIPO 散熱系統的技術護城河。</p>
+        <h2>核心技術優勢</h2>
+        <p class="section-sub">三大技術方向驅動科普科技在散熱領域的持續領先。</p>
       </div>
       <div class="tech-bento">
+        <!-- Wide top cell -->
         <div class="tb-cell tb-wide">
-          <img src="https://picsum.photos/seed/microfluidic-channel-copper/900/500" alt="微流道技術" class="tb-img" />
+          <img src="https://kipotec.com.tw/tc/images/0cacaa1c184e851ec16e8d58309da2cf.png"
+               alt="輕量化散熱複合材料"
+               class="tb-img"
+               onerror="this.src='https://picsum.photos/seed/thermal-composite-material/900/500'" />
           <div class="tb-label">
             <span class="eyebrow-mono">01</span>
-            <h3>微流道銅板技術</h3>
-            <p>蝕刻精度達 50μm 的微型流道網絡，最大化液體與銅板接觸面積，導熱係數提升 340%。</p>
+            <h3>輕量化熱複合材料</h3>
+            <p>自主研發輕量級熱複合材料，在不犧牲導熱性能的前提下大幅降低模組重量，適合超薄筆電及穿戴裝置應用。</p>
           </div>
         </div>
+        <!-- Bottom left -->
         <div class="tb-cell tb-dark">
           <div class="tb-icon-large" aria-hidden="true">
             <svg viewBox="0 0 64 64" fill="none" width="64" height="64">
               <circle cx="32" cy="32" r="28" stroke="#2563EB" stroke-width="1.5"/>
-              <path d="M32 10v6M32 48v6M10 32h6M48 32h6" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
-              <circle cx="32" cy="32" r="10" fill="#2563EB" fill-opacity=".15" stroke="#2563EB" stroke-width="1.5"/>
-              <path d="M22 32c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10" stroke="#60A5FA" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M20 44 C20 32 28 24 32 20 C36 24 44 32 44 44" stroke="#60A5FA" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M26 44 C26 36 29 30 32 27 C35 30 38 36 38 44" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="20" y1="44" x2="44" y2="44" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
           </div>
           <span class="eyebrow-mono">02</span>
-          <h3>均溫板 3D-VC</h3>
-          <p>三維燒結均溫板，各向同性熱傳，消除熱點集中問題，溫差控制在 ±2°C 以內。</p>
-          <div class="tech-num">±2°C</div>
+          <h3>低碳液冷系統</h3>
+          <p>自主研發低碳足跡液冷技術，在提升散熱效率的同時降低能耗與碳排放，契合全球 ESG 永續目標。</p>
+          <div class="tech-num">低碳<br/>綠能</div>
         </div>
+        <!-- Bottom right -->
         <div class="tb-cell tb-mid">
           <span class="eyebrow-mono">03</span>
-          <h3>AI 熱管理韌體</h3>
-          <p>嵌入式控制器配合自適應演算法，實時調節冷卻液流速，在性能與功耗間動態平衡。</p>
+          <h3>高效氣冷設計</h3>
+          <p>透過精密流道模擬與風扇匹配優化，在有限空間內最大化散熱效能，為 AI 伺服器及高效能工作站提供穩定熱管理。</p>
           <div class="firmware-bars" aria-hidden="true">
-            <div class="fb-row"><span>CPU</span><div class="fb-track"><div class="fb-fill" style="width:78%"></div></div><span>78°C</span></div>
-            <div class="fb-row"><span>GPU</span><div class="fb-track"><div class="fb-fill" style="width:65%"></div></div><span>65°C</span></div>
-            <div class="fb-row"><span>MEM</span><div class="fb-track"><div class="fb-fill" style="width:52%"></div></div><span>52°C</span></div>
+            <div class="fb-row"><span>筆電</span><div class="fb-track"><div class="fb-fill" style="width:88%"></div></div><span>高效</span></div>
+            <div class="fb-row"><span>伺服器</span><div class="fb-track"><div class="fb-fill" style="width:95%"></div></div><span>極效</span></div>
+            <div class="fb-row"><span>風扇</span><div class="fb-track"><div class="fb-fill" style="width:80%"></div></div><span>靜音</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ───── SPECS ───── -->
-  <section id="specs">
-    <div class="section-inner">
-      <h2>技術規格</h2>
-      <div class="specs-layout">
-        <div class="specs-table-wrap">
-          <table class="specs-table">
-            <thead>
-              <tr>
-                <th>規格項目</th>
-                <th>KL-Series</th>
-                <th>KH-Series</th>
-                <th>KP-Series</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>最大散熱功率</td>
-                <td class="highlight">500W</td>
-                <td>200W</td>
-                <td>350W</td>
-              </tr>
-              <tr>
-                <td>熱阻</td>
-                <td class="highlight">0.08°C/W</td>
-                <td>0.18°C/W</td>
-                <td>0.12°C/W</td>
-              </tr>
-              <tr>
-                <td>工作溫度範圍</td>
-                <td class="highlight">−40 ~ 125°C</td>
-                <td>−20 ~ 100°C</td>
-                <td>−40 ~ 120°C</td>
-              </tr>
-              <tr>
-                <td>防護等級</td>
-                <td class="highlight">IP67</td>
-                <td>IP54</td>
-                <td>IP67</td>
-              </tr>
-              <tr>
-                <td>噪音</td>
-                <td class="highlight">38 dB(A)</td>
-                <td>0 dB (被動)</td>
-                <td>0 dB (被動)</td>
-              </tr>
-              <tr>
-                <td>MTBF</td>
-                <td class="highlight">200,000 hrs</td>
-                <td>500,000 hrs</td>
-                <td>600,000 hrs</td>
-              </tr>
-              <tr>
-                <td>認證</td>
-                <td class="highlight">CE / UL / RoHS</td>
-                <td>CE / RoHS</td>
-                <td>MIL-STD-810</td>
-              </tr>
-            </tbody>
-          </table>
+  <!-- ───── ABOUT ───── -->
+  <section id="about">
+    <div class="section-inner about-layout">
+      <div class="about-content">
+        <h2>關於科普科技</h2>
+        <p>科普科技股份有限公司（Kipotec Corporation）成立於 1998 年，深耕散熱解決方案逾 25 年。我們的使命是成為全球領先的散熱方案提供者，為客戶創造更高的附加價值。</p>
+        <p>憑藉高效散熱、輕量化設計與綠色技術三大核心優勢，科普科技持續為全球知名電子品牌提供從研發設計到量產交付的一站式熱管理服務。</p>
+        <div class="about-certs">
+          <p class="eyebrow-mono">認證與資質</p>
+          <ul>
+            <li>品質管理認證</li>
+            <li>環保保護認證</li>
+            <li>安全認證</li>
+            <li>車用安全認證（IATF）</li>
+          </ul>
         </div>
-        <div class="specs-aside">
-          <img src="https://picsum.photos/seed/precision-engineering-thermal-module/500/600" alt="散熱模組精密製造" class="specs-img" />
-          <div class="specs-cert">
-            <p class="eyebrow-mono">認證與資質</p>
-            <ul>
-              <li>ISO 9001:2015 品質管理認證</li>
-              <li>IATF 16949 汽車工業認證</li>
-              <li>40+ 項散熱技術專利</li>
-              <li>MIL-STD-810H 軍規測試通過</li>
-            </ul>
-          </div>
+      </div>
+      <div class="about-stats">
+        <div class="about-stat-card">
+          <span class="about-stat-num">1998</span>
+          <span class="about-stat-label">創立年份</span>
+        </div>
+        <div class="about-stat-card">
+          <span class="about-stat-num">25+</span>
+          <span class="about-stat-label">年專業深耕</span>
+        </div>
+        <div class="about-stat-card">
+          <span class="about-stat-num">1,000+</span>
+          <span class="about-stat-label">員工人數</span>
+        </div>
+        <div class="about-stat-card highlight-card">
+          <span class="about-stat-num">NT$13億</span>
+          <span class="about-stat-label">資本額</span>
         </div>
       </div>
     </div>
@@ -260,39 +249,13 @@
   <!-- ───── CLIENTS ───── -->
   <section id="clients">
     <div class="section-inner">
-      <p class="clients-headline">受到全球領先企業信賴</p>
+      <p class="clients-headline">服務全球頂級電子品牌</p>
       <div class="logo-wall">
-        <!-- Simple SVG wordmarks for invented brand names -->
-        <div class="logo-item">
-          <svg viewBox="0 0 100 32" fill="none" width="100" height="32" aria-label="SkyEdge">
-            <text x="0" y="24" font-family="Geist, sans-serif" font-size="18" font-weight="600" fill="currentColor">SkyEdge</text>
-          </svg>
-        </div>
-        <div class="logo-item">
-          <svg viewBox="0 0 80 32" fill="none" width="80" height="32" aria-label="NovaSemi">
-            <text x="0" y="24" font-family="Geist, sans-serif" font-size="18" font-weight="600" fill="currentColor">NovaSemi</text>
-          </svg>
-        </div>
-        <div class="logo-item">
-          <svg viewBox="0 0 90 32" fill="none" width="90" height="32" aria-label="AxisAI">
-            <text x="0" y="24" font-family="Geist, sans-serif" font-size="18" font-weight="600" fill="currentColor">AxisAI</text>
-          </svg>
-        </div>
-        <div class="logo-item">
-          <svg viewBox="0 0 110 32" fill="none" width="110" height="32" aria-label="PulseData">
-            <text x="0" y="24" font-family="Geist, sans-serif" font-size="18" font-weight="600" fill="currentColor">PulseData</text>
-          </svg>
-        </div>
-        <div class="logo-item">
-          <svg viewBox="0 0 90 32" fill="none" width="90" height="32" aria-label="VoltCore">
-            <text x="0" y="24" font-family="Geist, sans-serif" font-size="18" font-weight="600" fill="currentColor">VoltCore</text>
-          </svg>
-        </div>
-        <div class="logo-item">
-          <svg viewBox="0 0 100 32" fill="none" width="100" height="32" aria-label="DeepForge">
-            <text x="0" y="24" font-family="Geist, sans-serif" font-size="18" font-weight="600" fill="currentColor">DeepForge</text>
-          </svg>
-        </div>
+        <div class="logo-item"><svg viewBox="0 0 90 32" width="90" height="32" aria-label="Notebook OEM"><text x="0" y="23" font-family="Geist,sans-serif" font-size="16" font-weight="600" fill="currentColor">Notebook OEM</text></svg></div>
+        <div class="logo-item"><svg viewBox="0 0 70 32" width="70" height="32" aria-label="Gaming"><text x="0" y="23" font-family="Geist,sans-serif" font-size="16" font-weight="600" fill="currentColor">Gaming</text></svg></div>
+        <div class="logo-item"><svg viewBox="0 0 60 32" width="60" height="32" aria-label="Server"><text x="0" y="23" font-family="Geist,sans-serif" font-size="16" font-weight="600" fill="currentColor">Server</text></svg></div>
+        <div class="logo-item"><svg viewBox="0 0 80 32" width="80" height="32" aria-label="AIoT"><text x="0" y="23" font-family="Geist,sans-serif" font-size="16" font-weight="600" fill="currentColor">AIoT</text></svg></div>
+        <div class="logo-item"><svg viewBox="0 0 90 32" width="90" height="32" aria-label="Automotive"><text x="0" y="23" font-family="Geist,sans-serif" font-size="16" font-weight="600" fill="currentColor">Automotive</text></svg></div>
       </div>
     </div>
   </section>
@@ -301,8 +264,8 @@
   <section id="cta-band">
     <div class="section-inner cta-band-inner">
       <div>
-        <h2>準備好提升您的散熱性能？</h2>
-        <p>我們的工程師將在 24 小時內回覆您的技術需求，提供客製化散熱方案。</p>
+        <h2>需要客製化散熱方案？</h2>
+        <p>我們的工程師團隊將根據您的應用需求，提供從設計開發到量產的完整技術支援。</p>
       </div>
       <a href="#contact" class="btn-primary btn-large">立即諮詢</a>
     </div>
@@ -314,30 +277,55 @@
       <div class="contact-layout">
         <div class="contact-info">
           <h2>聯繫我們</h2>
-          <p>無論是標準產品詢價或客製化工程需求，我們的技術業務團隊隨時為您服務。</p>
-          <div class="contact-details">
-            <div class="cd-item">
-              <svg viewBox="0 0 20 20" fill="none" width="18" height="18" aria-hidden="true">
-                <path d="M3 5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" stroke="currentColor" stroke-width="1.4"/>
-                <path d="M3 7l7 5 7-5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-              </svg>
-              <span>sales@kipothermal.com</span>
+          <p>無論是標準產品詢價或客製化工程需求，歡迎透過以下方式與我們聯繫。</p>
+
+          <div class="office-block">
+            <p class="office-title">總部（台中）</p>
+            <div class="contact-details">
+              <div class="cd-item">
+                <svg viewBox="0 0 20 20" fill="none" width="16" height="16" aria-hidden="true"><path d="M10 2C7.24 2 5 4.24 5 7c0 4.25 5 11 5 11s5-6.75 5-11c0-2.76-2.24-5-5-5z" stroke="currentColor" stroke-width="1.4"/><circle cx="10" cy="7" r="1.5" stroke="currentColor" stroke-width="1.4"/></svg>
+                <span>台中工業區工業路 36 號</span>
+              </div>
+              <div class="cd-item">
+                <svg viewBox="0 0 20 20" fill="none" width="16" height="16" aria-hidden="true"><path d="M3 4.5A1.5 1.5 0 014.5 3h1.62a.75.75 0 01.712.513l.73 2.19a.75.75 0 01-.17.768L6.12 7.65a9.5 9.5 0 004.23 4.23l1.179-1.282a.75.75 0 01.768-.17l2.19.73a.75.75 0 01.513.712V13.5A1.5 1.5 0 0113.5 15 10.5 10.5 0 013 4.5z" stroke="currentColor" stroke-width="1.4"/></svg>
+                <span>+886-4-2359-6699</span>
+              </div>
+              <div class="cd-item">
+                <svg viewBox="0 0 20 20" fill="none" width="16" height="16" aria-hidden="true"><path d="M3 5a2 2 0 012-2h10a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z" stroke="currentColor" stroke-width="1.4"/><path d="M3 7l7 5 7-5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                <span>howard@kipotec.com.tw</span>
+              </div>
             </div>
-            <div class="cd-item">
-              <svg viewBox="0 0 20 20" fill="none" width="18" height="18" aria-hidden="true">
-                <path d="M3 4.5A1.5 1.5 0 014.5 3h1.62a.75.75 0 01.712.513l.73 2.19a.75.75 0 01-.17.768L6.12 7.65a9.5 9.5 0 004.23 4.23l1.179-1.282a.75.75 0 01.768-.17l2.19.73a.75.75 0 01.513.712V13.5A1.5 1.5 0 0113.5 15 10.5 10.5 0 013 4.5z" stroke="currentColor" stroke-width="1.4"/>
-              </svg>
-              <span>+886 2 2345 6789</span>
+          </div>
+
+          <div class="office-block">
+            <p class="office-title">台北辦公室</p>
+            <div class="contact-details">
+              <div class="cd-item">
+                <svg viewBox="0 0 20 20" fill="none" width="16" height="16" aria-hidden="true"><path d="M10 2C7.24 2 5 4.24 5 7c0 4.25 5 11 5 11s5-6.75 5-11c0-2.76-2.24-5-5-5z" stroke="currentColor" stroke-width="1.4"/><circle cx="10" cy="7" r="1.5" stroke="currentColor" stroke-width="1.4"/></svg>
+                <span>新北市新莊區新北路三段 5 號 20F-3</span>
+              </div>
+              <div class="cd-item">
+                <svg viewBox="0 0 20 20" fill="none" width="16" height="16" aria-hidden="true"><path d="M3 4.5A1.5 1.5 0 014.5 3h1.62a.75.75 0 01.712.513l.73 2.19a.75.75 0 01-.17.768L6.12 7.65a9.5 9.5 0 004.23 4.23l1.179-1.282a.75.75 0 01.768-.17l2.19.73a.75.75 0 01.513.712V13.5A1.5 1.5 0 0113.5 15 10.5 10.5 0 013 4.5z" stroke="currentColor" stroke-width="1.4"/></svg>
+                <span>+886-2-8522-7278</span>
+              </div>
             </div>
-            <div class="cd-item">
-              <svg viewBox="0 0 20 20" fill="none" width="18" height="18" aria-hidden="true">
-                <path d="M10 2C7.24 2 5 4.24 5 7c0 4.25 5 11 5 11s5-6.75 5-11c0-2.76-2.24-5-5-5z" stroke="currentColor" stroke-width="1.4"/>
-                <circle cx="10" cy="7" r="1.5" stroke="currentColor" stroke-width="1.4"/>
-              </svg>
-              <span>台灣新竹市科學園區研新一路 100 號</span>
+          </div>
+
+          <div class="office-block">
+            <p class="office-title">昆山廠（中國）</p>
+            <div class="contact-details">
+              <div class="cd-item">
+                <svg viewBox="0 0 20 20" fill="none" width="16" height="16" aria-hidden="true"><path d="M10 2C7.24 2 5 4.24 5 7c0 4.25 5 11 5 11s5-6.75 5-11c0-2.76-2.24-5-5-5z" stroke="currentColor" stroke-width="1.4"/><circle cx="10" cy="7" r="1.5" stroke="currentColor" stroke-width="1.4"/></svg>
+                <span>江蘇省昆山市周市鎮橫新涇路 88 號</span>
+              </div>
+              <div class="cd-item">
+                <svg viewBox="0 0 20 20" fill="none" width="16" height="16" aria-hidden="true"><path d="M3 4.5A1.5 1.5 0 014.5 3h1.62a.75.75 0 01.712.513l.73 2.19a.75.75 0 01-.17.768L6.12 7.65a9.5 9.5 0 004.23 4.23l1.179-1.282a.75.75 0 01.768-.17l2.19.73a.75.75 0 01.513.712V13.5A1.5 1.5 0 0113.5 15 10.5 10.5 0 013 4.5z" stroke="currentColor" stroke-width="1.4"/></svg>
+                <span>+86-512-57639568</span>
+              </div>
             </div>
           </div>
         </div>
+
         <form class="contact-form" onsubmit="handleSubmit(event)">
           <div class="form-row">
             <div class="form-group">
@@ -354,13 +342,14 @@
             <input type="email" id="email" name="email" placeholder="your@company.com" required />
           </div>
           <div class="form-group">
-            <label for="product">產品系列</label>
+            <label for="product">產品類別</label>
             <select id="product" name="product">
-              <option value="">選擇產品系列</option>
-              <option value="kl">KL-Series 液冷散熱模組</option>
-              <option value="kh">KH-Series 熱管散熱器</option>
-              <option value="kp">KP-Series 相變散熱系統</option>
-              <option value="kr">KR-Series 機架冷卻系統</option>
+              <option value="">選擇產品類別</option>
+              <option value="notebook">筆電 / 電競散熱模組</option>
+              <option value="aio">桌上型 AIO 散熱模組</option>
+              <option value="server">伺服器散熱系統</option>
+              <option value="fan">散熱風扇</option>
+              <option value="liquid">液冷系統</option>
               <option value="custom">客製化需求</option>
             </select>
           </div>
@@ -379,42 +368,41 @@
   <footer id="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <a href="#" class="logo">
-          <svg width="24" height="24" viewBox="0 0 28 28" fill="none" aria-hidden="true">
-            <rect width="28" height="28" rx="6" fill="#2563EB"/>
-            <path d="M7 14h14M14 7v14M9 9l10 10M19 9L9 19" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
-          <span>KIPO</span><span class="logo-sub">Thermal</span>
+        <a href="#" class="logo footer-logo">
+          <img src="https://kipotec.com.tw/tc/images/528d468a1c695edd4f8a2b72617471c5.png"
+               alt="科普科技 Kipotec"
+               class="logo-img"
+               onerror="this.style.display='none'" />
         </a>
-        <p>精密散熱，極限性能。<br/>為下一代電子設備提供可靠的熱管理解決方案。</p>
+        <p>驅動科技之心，冷卻無限可能。<br/>深耕散熱解決方案逾 25 年，服務全球頂級電子品牌。</p>
+        <p class="footer-web"><a href="http://www.kipotec.com.tw" target="_blank" rel="noopener">www.kipotec.com.tw</a></p>
       </div>
       <div class="footer-links">
         <div class="fl-col">
           <p class="fl-title">產品</p>
-          <a href="#solutions">KL-Series</a>
-          <a href="#solutions">KH-Series</a>
-          <a href="#solutions">KP-Series</a>
-          <a href="#solutions">KR-Series</a>
+          <a href="#solutions">筆電散熱模組</a>
+          <a href="#solutions">AIO 散熱模組</a>
+          <a href="#solutions">伺服器散熱</a>
+          <a href="#solutions">散熱風扇</a>
         </div>
         <div class="fl-col">
           <p class="fl-title">公司</p>
-          <a href="#technology">技術</a>
-          <a href="#specs">規格</a>
-          <a href="#clients">客戶案例</a>
-          <a href="#contact">聯繫</a>
+          <a href="#about">關於我們</a>
+          <a href="#technology">技術優勢</a>
+          <a href="#clients">合作夥伴</a>
+          <a href="#contact">聯繫我們</a>
         </div>
         <div class="fl-col">
-          <p class="fl-title">資源</p>
-          <a href="#">產品型錄</a>
-          <a href="#">技術白皮書</a>
-          <a href="#">CAD 下載</a>
-          <a href="#">認證文件</a>
+          <p class="fl-title">據點</p>
+          <a href="#contact">台中總部</a>
+          <a href="#contact">台北辦公室</a>
+          <a href="#contact">昆山廠</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 KIPO Thermal Technology Co., Ltd. All rights reserved.</p>
-      <p>台灣新竹 · ISO 9001 · IATF 16949</p>
+      <p>© 2026 科普科技股份有限公司 Kipotec Corporation. All rights reserved.</p>
+      <p>台中・台北・昆山 | 成立於 1998 年</p>
     </div>
   </footer>
 
