@@ -864,3 +864,6 @@ textarea { resize: vertical; min-height: 110px; }
   transition: transform 0.2s;
 }
 .prod-hero-img:hover { transform: scale(1.01); }
+.spec-img-row td { padding: 0.5rem 0.75rem; vertical-align: middle; }
+.spec-col-img { width: 100%; max-height: 120px; object-fit: cover; border-radius: 8px; border: 1px solid var(--border); cursor: zoom-in; transition: transform 0.2s; }
+.spec-col-img:hover { transform: scale(1.02); }
