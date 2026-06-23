@@ -16,7 +16,7 @@
   --mono:      'Geist Mono', monospace;
   --sans:      'Geist', sans-serif;
   --radius:    10px;
-  --nav-h:     100px;
+  --nav-h:     240px;
 }
 
 html { scroll-behavior: smooth; }
@@ -40,7 +40,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
 
 .eyebrow {
   font-family: var(--mono);
-  font-size: 0.7rem;
+  font-size: 1.3rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent-hi);
@@ -156,9 +156,9 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
   transition: background 0.2s;
 }
 
-.logo-img { height: 96px; width: auto; object-fit: contain; display: block; }
+.logo-img { height: 288px; width: auto; object-fit: contain; display: block; }
 
-.footer-logo .logo-img { height: 90px; }
+.footer-logo .logo-img { height: 120px; }
 .logo-sub { color: var(--text-muted); font-weight: 400; }
 
 /* ── Language Switcher ── */
@@ -437,7 +437,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
 .tb-wide h3 { font-size: 1.3rem; }
 .tb-wide p { color: var(--text-muted); font-size: 0.92rem; line-height: 1.7; }
 
-.tb-dark { background: #0b111e; }
+.tb-dark { background: #eff6ff; }
 .tb-dark h3, .tb-mid h3 { margin-top: 0.25rem; }
 .tb-dark p, .tb-mid p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.65; }
 
@@ -588,7 +588,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
   flex-direction: column;
   gap: 0.4rem;
 }
-.about-stat-card.highlight-card { background: #0d1a35; }
+.about-stat-card.highlight-card { background: #dbeafe; }
 .about-stat-num { font-size: 1.9rem; font-weight: 700; letter-spacing: -0.03em; color: var(--text); }
 .about-stat-card.highlight-card .about-stat-num { color: var(--accent-hi); }
 .about-stat-label { font-size: 0.8rem; color: var(--text-dim); font-family: var(--mono); }
@@ -640,7 +640,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
 /* ── CTA BAND ── */
 #cta-band {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #0d1a35 0%, #0d1320 100%);
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
   border-top: 1px solid rgba(37,99,235,0.2);
   border-bottom: 1px solid rgba(37,99,235,0.2);
 }
