@@ -308,7 +308,6 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
   display: flex;
   align-items: center;
   gap: 0;
-  border-top: 1px solid var(--border);
   margin-top: 4rem;
 }
 .metric {
