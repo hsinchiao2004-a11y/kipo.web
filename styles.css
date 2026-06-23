@@ -824,8 +824,8 @@ textarea { resize: vertical; min-height: 110px; }
 /* ── Spec Table ── */
 .spec-table-wrap { overflow-x: auto; margin-bottom: 1rem; border-radius: var(--radius); border: 1px solid var(--border-hi); }
 .spec-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-.spec-table th { background: var(--accent); color: #fff; padding: 0.6rem 1rem; text-align: left; font-weight: 600; white-space: nowrap; }
-.spec-table td { padding: 0.55rem 1rem; border-bottom: 1px solid var(--border); color: var(--text-muted); }
+.spec-table th { background: var(--accent); color: #fff; padding: 0.6rem 1rem; text-align: center; font-weight: 600; white-space: nowrap; }
+.spec-table td { padding: 0.55rem 1rem; border-bottom: 1px solid var(--border); color: var(--text-muted); text-align: center; }
 .spec-table td:first-child { font-weight: 600; color: var(--text); background: var(--bg2); white-space: nowrap; }
 .spec-table tr:last-child td { border-bottom: none; }
 .spec-table tr:hover td { background: var(--bg3); }
