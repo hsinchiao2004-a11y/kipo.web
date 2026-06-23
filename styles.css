@@ -331,7 +331,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
   padding: 7rem 0;
   background: var(--bg2);
 }
-#solutions h2 { margin-bottom: 0.5rem; }
+#solutions h2 { margin-bottom: 2rem; }
 #solutions .section-sub { margin-bottom: 3rem; }
 .solutions-grid {
   display: grid;
