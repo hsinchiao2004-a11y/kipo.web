@@ -54,7 +54,7 @@ const TRANSLATIONS = {
     stat3_val:    '低碳綠能',
     m1_label:     '年產業深耕',
     m2_label:     '專業員工人數',
-    m3_label:     '資本額<br/>新台幣',
+    m3_label:     '資本額 新台幣',
     m4_label:     '全球據點',
 
     /* SOLUTIONS */
@@ -201,7 +201,7 @@ const TRANSLATIONS = {
     stat3_val:    '低碳绿能',
     m1_label:     '年产业深耕',
     m2_label:     '专业员工人数',
-    m3_label:     '资本额<br/>新台币',
+    m3_label:     '资本额 新台币',
     m4_label:     '全球据点',
     sol_h2:       '产品线',
     sol_sub:      '涵盖消费性电子到企业级服务器的完整散热解决方案。',
@@ -334,7 +334,7 @@ const TRANSLATIONS = {
     stat3_val:    'Low Carbon',
     m1_label:     'Years of Expertise',
     m2_label:     'Employees',
-    m3_label:     'Capital<br/>NTD',
+    m3_label:     'Capital NTD',
     m4_label:     'Global Locations',
     sol_h2:       'Product Lines',
     sol_sub:      'Complete thermal solutions from consumer electronics to enterprise-grade servers.',
