@@ -42,7 +42,7 @@ const TRANSLATIONS = {
 
     /* HERO */
     hero_eyebrow: '25+ 年散熱技術深耕',
-    hero_h1:      '驅動科技之心，<br/>冷卻無限可能',
+    hero_h1:      '驅動科技之心<br/>冷卻無限可能',
     hero_sub:     '科普科技深耕散熱領域逾 25 年，從筆電散熱模組到伺服器液冷系統，為全球一流電子品牌提供高效、輕量、低碳的熱管理解決方案。',
     hero_cta1:    '聯繫業務',
     hero_cta2:    '查看產品',
@@ -189,7 +189,7 @@ const TRANSLATIONS = {
     job6_title: '自动化设备工程师', job6_loc: '昆山厂',
     careers_cta_p: '没有看到合适的职缺？欢迎主动投递简历！', careers_cta_btn: '投递简历',
     hero_eyebrow: '25+ 年散热技术深耕',
-    hero_h1:      '驱动科技之心，<br/>冷却无限可能',
+    hero_h1:      '驱动科技之心<br/>冷却无限可能',
     hero_sub:     '科普科技深耕散热领域逾 25 年，从笔电散热模组到服务器液冷系统，为全球一流电子品牌提供高效、轻量、低碳的热管理解决方案。',
     hero_cta1:    '联系业务',
     hero_cta2:    '查看产品',
@@ -322,7 +322,7 @@ const TRANSLATIONS = {
     job6_title: 'Automation Engineer',         job6_loc: 'Kunshan Factory',
     careers_cta_p: "Don't see a matching role? We welcome proactive applications from talented individuals!", careers_cta_btn: 'Send Resume',
     hero_eyebrow: '25+ Years of Thermal Expertise',
-    hero_h1:      'Driving Technology\'s Core,<br/>Cooling Infinite Possibilities',
+    hero_h1:      'Driving Technology\'s Core<br/>Cooling Infinite Possibilities',
     hero_sub:     'Kipotec has specialized in thermal management for over 25 years — from notebook cooling modules to server liquid cooling systems — delivering high-efficiency, lightweight, and low-carbon heat solutions to the world\'s leading electronics brands.',
     hero_cta1:    'Contact Sales',
     hero_cta2:    'View Products',
