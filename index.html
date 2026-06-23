@@ -23,6 +23,7 @@
         <li><a href="#technology" data-i18n="nav_technology">技術</a></li>
         <li><a href="#about" data-i18n="nav_about">關於我們</a></li>
         <li><a href="#clients" data-i18n="nav_clients">合作夥伴</a></li>
+        <li><a href="#careers" data-i18n="nav_careers">加入KIPO</a></li>
         <li><a href="#contact" class="btn-nav" data-i18n="nav_contact">聯繫我們</a></li>
       </ul>
       <div class="lang-switcher">
@@ -39,6 +40,7 @@
       <a href="#technology" onclick="toggleMenu()" data-i18n="nav_technology">技術</a>
       <a href="#about" onclick="toggleMenu()" data-i18n="nav_about">關於我們</a>
       <a href="#clients" onclick="toggleMenu()" data-i18n="nav_clients">合作夥伴</a>
+      <a href="#careers" onclick="toggleMenu()" data-i18n="nav_careers">加入KIPO</a>
       <a href="#contact" onclick="toggleMenu()" data-i18n="nav_contact">聯繫我們</a>
       <div class="lang-switcher lang-switcher-mobile">
         <button class="lang-btn active" data-lang="zh-TW">繁體中文</button>
@@ -100,41 +102,179 @@
     <div class="section-inner">
       <h2 data-i18n="sol_h2">產品線</h2>
       <p class="section-sub" data-i18n="sol_sub">涵蓋消費性電子到企業級伺服器的完整散熱解決方案。</p>
-      <div class="solutions-grid">
-        <div class="sol-card sol-featured">
-          <img src="https://kipotec.com.tw/tc/images/ed273b71d82e9f13961d1016afd9f8ea.jpg" alt="筆記型電腦散熱模組" class="sol-img" onerror="this.src='https://picsum.photos/seed/laptop-cooling-copper/800/500'" />
-          <div class="sol-body">
-            <span class="sol-tag" data-i18n="sol_tag">核心產品</span>
-            <h3 data-i18n="sol1_title">筆電 / 電競散熱模組</h3>
-            <p data-i18n="sol1_desc">大功率容量設計，低熱阻、安全穩定。適用於主流筆記型電腦及高效能電競機型，提供均溫板與熱管整合解決方案。</p>
-            <a href="#contact" class="btn-text" data-i18n="sol_cta">索取資料 →</a>
+
+      <!-- Intel × Kipo partnership banner -->
+      <div class="intel-collab">
+        <div class="intel-collab-left">
+          <div class="intel-badge">
+            <span class="ib-kipo">KIPO</span>
+            <span class="ib-x">×</span>
+            <span class="ib-intel">intel</span>
+          </div>
+          <h3 data-i18n="intel_title">聯合開發全液冷散熱系統</h3>
+          <p data-i18n="intel_desc">科普與 Intel 共同開發全水冷系統，涵蓋 CPU、Addon Card、DIMM、OSFP、E1.S 完整液冷解決方案。</p>
+          <div class="intel-tags">
+            <span>CPU</span><span>DIMM</span><span>OSFP</span><span>E1.S</span><span>Addon Card</span>
           </div>
         </div>
-        <div class="sol-card">
-          <img src="https://kipotec.com.tw/tc/images/b79f50aa0c2fe707e23905ad5f97f1fd.jpg" alt="AIO 散熱模組" class="sol-img" onerror="this.src='https://picsum.photos/seed/desktop-aio-cooling/600/400'" />
-          <div class="sol-body">
-            <h3 data-i18n="sol2_title">桌上型 AIO 散熱模組</h3>
-            <p data-i18n="sol2_desc">一體成型整合設計，適用於 All-in-One 桌上型電腦，提供高效靜音散熱體驗。</p>
-            <a href="#contact" class="btn-text" data-i18n="sol_cta">索取資料 →</a>
+        <div class="intel-collab-right">
+          <div class="intel-stat-block">
+            <span class="intel-stat-val">300W⁺</span>
+            <span class="intel-stat-unit" data-i18n="intel_stat_unit">/cm² 晶片面積散熱目標</span>
           </div>
+          <img src="dm/dm01.jpg" alt="Kipo × Intel 液冷系統" class="intel-dm-img cert-img" onclick="openLightbox(this)" role="button" tabindex="0" />
         </div>
-        <div class="sol-card">
-          <img src="https://kipotec.com.tw/tc/images/5e80b3fc2ba687381cbf39aaa472e434.png" alt="伺服器散熱系統" class="sol-img" onerror="this.src='https://picsum.photos/seed/server-rack-cooling/600/400'" />
-          <div class="sol-body">
-            <h3 data-i18n="sol3_title">伺服器散熱系統</h3>
-            <p data-i18n="sol3_desc">涵蓋氣冷與液冷兩大系統，針對高密度伺服器與 AI 運算叢集提供企業級散熱方案，低碳足跡。</p>
-            <a href="#contact" class="btn-text" data-i18n="sol_cta">索取資料 →</a>
+      </div>
+
+      <!-- Product category tabs -->
+      <div class="prod-tabs" role="tablist">
+        <button class="ptab active" data-tab="lcm" role="tab" data-i18n="tab_lcm">液冷模組 LCM</button>
+        <button class="ptab" data-tab="evac" role="tab" data-i18n="tab_evac">氣冷 EVAC</button>
+        <button class="ptab" data-tab="nb" role="tab" data-i18n="tab_nb">筆電 / AIO</button>
+        <button class="ptab" data-tab="rack" role="tab" data-i18n="tab_rack">機架系統 RACK</button>
+      </div>
+
+      <!-- LCM -->
+      <div class="ptab-content active" id="tab-lcm">
+        <h4 class="prod-series-title" data-i18n="lcm_cpu_title">CPU LCM Series</h4>
+        <div class="spec-table-wrap">
+          <table class="spec-table">
+            <thead><tr>
+              <th data-i18n="spec_spec">SPEC</th>
+              <th>Intel CPU BHS</th><th>AMD CPU SP5</th>
+              <th>Intel OKS CPU+DIMM</th><th>AMD SP5 CPU+DIMM</th>
+            </tr></thead>
+            <tbody>
+              <tr><td data-i18n="spec_app">Application</td><td>Server (CPUx2+PLX)</td><td>Server (CPUx2+PLX)</td><td>Server (CPUx2+DIMMx32)</td><td>Server (CPUx2+DIMMx32)</td></tr>
+              <tr><td data-i18n="spec_pwr">Power</td><td>550×2 W</td><td>550×2 W</td><td>700+40×32 W</td><td>500+40×32 W</td></tr>
+              <tr><td data-i18n="spec_cool">Coolant</td><td>PG25</td><td>PG25</td><td>PG25</td><td>PG25</td></tr>
+              <tr><td data-i18n="spec_flow">Flow Rate</td><td>1 LPM</td><td>1 LPM</td><td>1 LPM</td><td>1 LPM</td></tr>
+              <tr><td data-i18n="spec_pd">Pressure Drop</td><td>&lt;18 KPa</td><td>&lt;7 KPa</td><td>&lt;18 KPa</td><td>&lt;18 KPa</td></tr>
+              <tr><td data-i18n="spec_rth">Thermal Resistance</td><td>0.02 °C/W</td><td>0.035 °C/W</td><td>0.02 °C/W</td><td>0.02 °C/W</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4 class="prod-series-title" data-i18n="lcm_gpu_title">GPU LCM Series</h4>
+        <div class="spec-table-wrap">
+          <table class="spec-table">
+            <thead><tr>
+              <th data-i18n="spec_spec">SPEC</th>
+              <th>Nvidia GB200</th><th>Nvidia GB300</th><th>AMD GPU MI355</th>
+            </tr></thead>
+            <tbody>
+              <tr><td data-i18n="spec_app">Application</td><td>Server (GPUx2+CPUx1)</td><td>Server (GPUx2+CPUx1)</td><td>Server (GPUx4)</td></tr>
+              <tr><td data-i18n="spec_pwr">Power</td><td>1200×2+255 W</td><td>1400×2+270 W</td><td>1400×4 W</td></tr>
+              <tr><td data-i18n="spec_cool">Coolant</td><td>PG25</td><td>PG25</td><td>PG25</td></tr>
+              <tr><td data-i18n="spec_flow">Flow Rate</td><td>3 LPM</td><td>2.7 LPM</td><td>4 LPM</td></tr>
+              <tr><td data-i18n="spec_pd">Pressure Drop</td><td>&lt;20 KPa</td><td>&lt;25 KPa</td><td>&lt;15 KPa</td></tr>
+              <tr><td data-i18n="spec_rth">Thermal Resistance</td><td>0.05/0.017 °C/W</td><td>0.01/0.013 °C/W</td><td>0.022 °C/W</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4 class="prod-series-title" data-i18n="lcm_other_title">Others LCM Series</h4>
+        <div class="spec-table-wrap">
+          <table class="spec-table">
+            <thead><tr>
+              <th data-i18n="spec_spec">SPEC</th>
+              <th>OSFP</th><th>SSD / E1.S</th><th>PCIe Switch</th>
+            </tr></thead>
+            <tbody>
+              <tr><td data-i18n="spec_app">Application</td><td>OSFP</td><td>E1.S SSD</td><td>Server PCIe Switch ×4</td></tr>
+              <tr><td data-i18n="spec_pwr">Power</td><td>30×4 W</td><td>40 W/SSD</td><td>60×4 W</td></tr>
+              <tr><td data-i18n="spec_cool">Coolant</td><td>PG25</td><td>PG25</td><td>PG25</td></tr>
+              <tr><td data-i18n="spec_flow">Flow Rate</td><td>0.5 LPM</td><td>0.3–0.5 LPM</td><td>&lt;1 LPM</td></tr>
+              <tr><td data-i18n="spec_pd">Pressure Drop</td><td>&lt;4 KPa</td><td>&lt;20 KPa</td><td>&lt;7 KPa</td></tr>
+              <tr><td data-i18n="spec_rth">Thermal Resistance</td><td>0.07 °C/W</td><td>&lt;0.5 °C/W</td><td>0.035 °C/W</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dm-link-row">
+          <img src="dm/dm02.jpg" alt="LCM Spec Sheet" class="dm-thumb cert-img" onclick="openLightbox(this)" role="button" tabindex="0" />
+          <img src="dm/dm03.jpg" alt="Others LCM Spec Sheet" class="dm-thumb cert-img" onclick="openLightbox(this)" role="button" tabindex="0" />
+        </div>
+      </div>
+
+      <!-- EVAC -->
+      <div class="ptab-content" id="tab-evac">
+        <h4 class="prod-series-title" data-i18n="evac_title">KIPO EVAC Series — 伺服器氣冷方案</h4>
+        <div class="spec-table-wrap">
+          <table class="spec-table">
+            <thead><tr>
+              <th data-i18n="spec_spec">SPEC</th>
+              <th>Intel BHS 1U EVAC</th><th>Intel OKS 1U EVAC</th>
+            </tr></thead>
+            <tbody>
+              <tr><td data-i18n="spec_app">Application</td><td>Server</td><td>Server</td></tr>
+              <tr><td data-i18n="spec_pwr">Power</td><td>500 W</td><td>700 W</td></tr>
+              <tr><td data-i18n="spec_cool">Coolant</td><td>Air</td><td>Air</td></tr>
+              <tr><td>AIR Flow</td><td>45 CFM</td><td>45 CFM</td></tr>
+              <tr><td data-i18n="spec_rth">Thermal Resistance</td><td>0.06 °C/W</td><td>0.06 °C/W</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dm-link-row">
+          <img src="dm/dm04.jpg" alt="EVAC Spec Sheet" class="dm-thumb cert-img" onclick="openLightbox(this)" role="button" tabindex="0" />
+        </div>
+      </div>
+
+      <!-- NB / AIO -->
+      <div class="ptab-content" id="tab-nb">
+        <div class="solutions-grid">
+          <div class="sol-card sol-featured">
+            <img src="https://kipotec.com.tw/tc/images/ed273b71d82e9f13961d1016afd9f8ea.jpg" alt="筆記型電腦散熱模組" class="sol-img" />
+            <div class="sol-body">
+              <span class="sol-tag" data-i18n="sol_tag">核心產品</span>
+              <h3 data-i18n="sol1_title">筆電 / 電競散熱模組</h3>
+              <p data-i18n="sol1_desc">大功率容量設計，低熱阻、安全穩定。適用於主流筆記型電腦及高效能電競機型，提供均溫板與熱管整合解決方案。</p>
+              <a href="#contact" class="btn-text" data-i18n="sol_cta">索取資料 →</a>
+            </div>
           </div>
-        </div>
-        <div class="sol-card">
-          <img src="https://kipotec.com.tw/tc/images/65f4bafba467b98805e9f10664265c61.png" alt="散熱風扇" class="sol-img" onerror="this.src='https://picsum.photos/seed/cooling-fan-blower/600/400'" />
-          <div class="sol-body">
-            <h3 data-i18n="sol4_title">高效能散熱風扇</h3>
-            <p data-i18n="sol4_desc">高風量、高靜壓、低噪音設計；另提供低功耗靜音風扇系列，適用於對噪音敏感的應用環境。</p>
-            <a href="#contact" class="btn-text" data-i18n="sol_cta">索取資料 →</a>
+          <div class="sol-card">
+            <img src="https://kipotec.com.tw/tc/images/b79f50aa0c2fe707e23905ad5f97f1fd.jpg" alt="AIO 散熱模組" class="sol-img" />
+            <div class="sol-body">
+              <h3 data-i18n="sol2_title">桌上型 AIO 散熱模組</h3>
+              <p data-i18n="sol2_desc">一體成型整合設計，適用於 All-in-One 桌上型電腦，提供高效靜音散熱體驗。</p>
+              <a href="#contact" class="btn-text" data-i18n="sol_cta">索取資料 →</a>
+            </div>
+          </div>
+          <div class="sol-card">
+            <img src="https://kipotec.com.tw/tc/images/65f4bafba467b98805e9f10664265c61.png" alt="散熱風扇" class="sol-img" />
+            <div class="sol-body">
+              <h3 data-i18n="sol4_title">高效能散熱風扇</h3>
+              <p data-i18n="sol4_desc">高風量、高靜壓、低噪音設計；另提供低功耗靜音風扇系列，適用於對噪音敏感的應用環境。</p>
+              <a href="#contact" class="btn-text" data-i18n="sol_cta">索取資料 →</a>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- RACK -->
+      <div class="ptab-content" id="tab-rack">
+        <h4 class="prod-series-title" data-i18n="rack_title">KIPO RACK Series — CDU / CDM</h4>
+        <div class="spec-table-wrap">
+          <table class="spec-table">
+            <thead><tr>
+              <th data-i18n="spec_spec">SPEC</th>
+              <th>CDU</th><th>CDM</th>
+            </tr></thead>
+            <tbody>
+              <tr><td data-i18n="spec_app">Application</td><td>Server</td><td>Server</td></tr>
+              <tr><td>Flow Rate</td><td>140 LPM</td><td data-i18n="rack_cdm_custom">客製化設計</td></tr>
+              <tr><td>Server Performance</td><td>120kW@AT=5°C · 130LPM / PG25</td><td>—</td></tr>
+              <tr><td>Inlet Temp</td><td>35/45°C</td><td>—</td></tr>
+              <tr><td>Outlet Temp</td><td>40/50°C</td><td>—</td></tr>
+              <tr><td>Pressure Drop</td><td>1.5 bar@140LPM</td><td>—</td></tr>
+              <tr><td>Acoustic</td><td>≤65 dBA@1.5m</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="dm-link-row">
+          <img src="dm/dm06.jpg" alt="RACK Spec Sheet" class="dm-thumb cert-img" onclick="openLightbox(this)" role="button" tabindex="0" />
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -262,6 +402,83 @@
         <p data-i18n="cta_p">我們的工程師團隊將根據您的應用需求，提供從設計開發到量產的完整技術支援。</p>
       </div>
       <a href="#contact" class="btn-primary btn-large" data-i18n="cta_btn">立即諮詢</a>
+    </div>
+  </section>
+
+  <!-- ───── CAREERS ───── -->
+  <section id="careers">
+    <div class="section-inner">
+      <p class="eyebrow" data-i18n="careers_eyebrow">加入我們</p>
+      <h2 data-i18n="careers_h2">與 KIPO 共同驅動科技未來</h2>
+      <p class="section-sub" data-i18n="careers_sub">我們在台中、台北、昆山持續尋找熱愛散熱技術、勇於創新的夥伴，共同打造全球頂尖的熱管理解決方案。</p>
+
+      <div class="careers-grid">
+        <div class="career-card">
+          <div class="career-icon">⚙️</div>
+          <div class="career-body">
+            <h3 data-i18n="job1_title">散熱模擬工程師</h3>
+            <p class="career-loc" data-i18n="job1_loc">台中總部 / 昆山廠</p>
+            <ul class="career-tags">
+              <li>CFD 模擬</li><li>Ansys / Icepak</li><li>液冷設計</li>
+            </ul>
+          </div>
+        </div>
+        <div class="career-card">
+          <div class="career-icon">🔩</div>
+          <div class="career-body">
+            <h3 data-i18n="job2_title">機構設計工程師</h3>
+            <p class="career-loc" data-i18n="job2_loc">台中總部 / 昆山廠</p>
+            <ul class="career-tags">
+              <li>SolidWorks</li><li>均溫板</li><li>散熱模組</li>
+            </ul>
+          </div>
+        </div>
+        <div class="career-card">
+          <div class="career-icon">🔬</div>
+          <div class="career-body">
+            <h3 data-i18n="job3_title">研發工程師</h3>
+            <p class="career-loc" data-i18n="job3_loc">台中總部</p>
+            <ul class="career-tags">
+              <li>液冷系統</li><li>複合材料</li><li>NPI</li>
+            </ul>
+          </div>
+        </div>
+        <div class="career-card">
+          <div class="career-icon">📊</div>
+          <div class="career-body">
+            <h3 data-i18n="job4_title">業務工程師</h3>
+            <p class="career-loc" data-i18n="job4_loc">台北辦事處</p>
+            <ul class="career-tags">
+              <li>OEM/ODM</li><li>國際業務</li><li>英文溝通</li>
+            </ul>
+          </div>
+        </div>
+        <div class="career-card">
+          <div class="career-icon">✅</div>
+          <div class="career-body">
+            <h3 data-i18n="job5_title">品保工程師</h3>
+            <p class="career-loc" data-i18n="job5_loc">台中總部 / 昆山廠</p>
+            <ul class="career-tags">
+              <li>ISO 9001</li><li>IATF 16949</li><li>SPC</li>
+            </ul>
+          </div>
+        </div>
+        <div class="career-card">
+          <div class="career-icon">🤖</div>
+          <div class="career-body">
+            <h3 data-i18n="job6_title">自動化設備工程師</h3>
+            <p class="career-loc" data-i18n="job6_loc">昆山廠</p>
+            <ul class="career-tags">
+              <li>PLC</li><li>自動化產線</li><li>設備維護</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="careers-cta">
+        <p data-i18n="careers_cta_p">沒有看到符合的職缺？歡迎主動投遞履歷，我們隨時歡迎優秀人才！</p>
+        <a href="mailto:howard@kipotec.com.tw" class="btn-primary" data-i18n="careers_cta_btn">投遞履歷</a>
+      </div>
     </div>
   </section>
 

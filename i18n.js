@@ -5,7 +5,40 @@ const TRANSLATIONS = {
     nav_technology: '技術',
     nav_about:      '關於我們',
     nav_clients:    '合作夥伴',
+    nav_careers:    '加入KIPO',
     nav_contact:    '聯繫我們',
+
+    /* INTEL × KIPO */
+    intel_title:      '聯合開發全液冷散熱系統',
+    intel_desc:       '科普與 Intel 共同開發全水冷系統，涵蓋 CPU、Addon Card、DIMM、OSFP、E1.S 完整液冷解決方案。',
+    intel_stat_unit:  '/cm² 晶片面積散熱目標',
+
+    /* PRODUCT TABS */
+    tab_lcm:  '液冷模組 LCM',
+    tab_evac: '氣冷 EVAC',
+    tab_nb:   '筆電 / AIO',
+    tab_rack: '機架系統 RACK',
+    lcm_cpu_title:   'CPU LCM Series',
+    lcm_gpu_title:   'GPU LCM Series',
+    lcm_other_title: 'Others LCM Series',
+    evac_title:      'KIPO EVAC Series — 伺服器氣冷方案',
+    rack_title:      'KIPO RACK Series — CDU / CDM',
+    rack_cdm_custom: '客製化設計',
+    spec_spec: 'SPEC', spec_app: 'Application', spec_pwr: 'Power',
+    spec_cool: 'Coolant', spec_flow: 'Flow Rate', spec_pd: 'Pressure Drop', spec_rth: 'Thermal Resistance',
+
+    /* CAREERS */
+    careers_eyebrow: '加入我們',
+    careers_h2:      '與 KIPO 共同驅動科技未來',
+    careers_sub:     '我們在台中、台北、昆山持續尋找熱愛散熱技術、勇於創新的夥伴，共同打造全球頂尖的熱管理解決方案。',
+    job1_title: '散熱模擬工程師', job1_loc: '台中總部 / 昆山廠',
+    job2_title: '機構設計工程師', job2_loc: '台中總部 / 昆山廠',
+    job3_title: '研發工程師',     job3_loc: '台中總部',
+    job4_title: '業務工程師',     job4_loc: '台北辦事處',
+    job5_title: '品保工程師',     job5_loc: '台中總部 / 昆山廠',
+    job6_title: '自動化設備工程師', job6_loc: '昆山廠',
+    careers_cta_p:   '沒有看到符合的職缺？歡迎主動投遞履歷，我們隨時歡迎優秀人才！',
+    careers_cta_btn: '投遞履歷',
 
     /* HERO */
     hero_eyebrow: '25+ 年散熱技術深耕',
@@ -129,7 +162,32 @@ const TRANSLATIONS = {
     nav_technology: '技术',
     nav_about:      '关于我们',
     nav_clients:    '合作伙伴',
+    nav_careers:    '加入KIPO',
     nav_contact:    '联系我们',
+
+    /* INTEL × KIPO */
+    intel_title:      '联合开发全液冷散热系统',
+    intel_desc:       '科普与 Intel 共同开发全水冷系统，涵盖 CPU、Addon Card、DIMM、OSFP、E1.S 完整液冷解决方案。',
+    intel_stat_unit:  '/cm² 芯片面积散热目标',
+
+    /* PRODUCT TABS */
+    tab_lcm:  '液冷模组 LCM', tab_evac: '气冷 EVAC', tab_nb: '笔电 / AIO', tab_rack: '机架系统 RACK',
+    lcm_cpu_title: 'CPU LCM Series', lcm_gpu_title: 'GPU LCM Series', lcm_other_title: 'Others LCM Series',
+    evac_title: 'KIPO EVAC Series — 服务器气冷方案', rack_title: 'KIPO RACK Series — CDU / CDM',
+    rack_cdm_custom: '客制化设计',
+    spec_spec: 'SPEC', spec_app: 'Application', spec_pwr: 'Power',
+    spec_cool: 'Coolant', spec_flow: 'Flow Rate', spec_pd: 'Pressure Drop', spec_rth: 'Thermal Resistance',
+
+    /* CAREERS */
+    careers_eyebrow: '加入我们', careers_h2: '与 KIPO 共同驱动科技未来',
+    careers_sub: '我们在台中、台北、昆山持续寻找热爱散热技术、勇于创新的伙伴。',
+    job1_title: '散热模拟工程师', job1_loc: '台中总部 / 昆山厂',
+    job2_title: '机构设计工程师', job2_loc: '台中总部 / 昆山厂',
+    job3_title: '研发工程师',     job3_loc: '台中总部',
+    job4_title: '业务工程师',     job4_loc: '台北办事处',
+    job5_title: '品保工程师',     job5_loc: '台中总部 / 昆山厂',
+    job6_title: '自动化设备工程师', job6_loc: '昆山厂',
+    careers_cta_p: '没有看到合适的职缺？欢迎主动投递简历！', careers_cta_btn: '投递简历',
     hero_eyebrow: '25+ 年散热技术深耕',
     hero_h1:      '驱动科技之心，<br/>冷却无限可能',
     hero_sub:     '科普科技深耕散热领域逾 25 年，从笔电散热模组到服务器液冷系统，为全球一流电子品牌提供高效、轻量、低碳的热管理解决方案。',
@@ -237,7 +295,32 @@ const TRANSLATIONS = {
     nav_technology: 'Technology',
     nav_about:      'About',
     nav_clients:    'Partners',
+    nav_careers:    'Join KIPO',
     nav_contact:    'Contact Us',
+
+    /* INTEL × KIPO */
+    intel_title:      'Jointly Developed Full Liquid-Cooling System',
+    intel_desc:       'Kipo and Intel jointly developed a full liquid-cooling system covering CPU, Addon Card, DIMM, OSFP, and E1.S.',
+    intel_stat_unit:  '/cm² chip area thermal target',
+
+    /* PRODUCT TABS */
+    tab_lcm: 'Liquid Cooling LCM', tab_evac: 'Air Cooling EVAC', tab_nb: 'Notebook / AIO', tab_rack: 'Rack System',
+    lcm_cpu_title: 'CPU LCM Series', lcm_gpu_title: 'GPU LCM Series', lcm_other_title: 'Others LCM Series',
+    evac_title: 'KIPO EVAC Series — Server Air Cooling', rack_title: 'KIPO RACK Series — CDU / CDM',
+    rack_cdm_custom: 'Customizable',
+    spec_spec: 'SPEC', spec_app: 'Application', spec_pwr: 'Power',
+    spec_cool: 'Coolant', spec_flow: 'Flow Rate', spec_pd: 'Pressure Drop', spec_rth: 'Thermal Resistance',
+
+    /* CAREERS */
+    careers_eyebrow: 'Join Us', careers_h2: 'Build the Future of Thermal Tech with KIPO',
+    careers_sub: 'We are always looking for passionate engineers and innovators across Taichung, Taipei, and Kunshan to create world-class thermal management solutions.',
+    job1_title: 'Thermal Simulation Engineer', job1_loc: 'Taichung HQ / Kunshan',
+    job2_title: 'Mechanical Design Engineer',  job2_loc: 'Taichung HQ / Kunshan',
+    job3_title: 'R&D Engineer',                job3_loc: 'Taichung HQ',
+    job4_title: 'Sales Engineer',              job4_loc: 'Taipei Branch',
+    job5_title: 'QA Engineer',                 job5_loc: 'Taichung HQ / Kunshan',
+    job6_title: 'Automation Engineer',         job6_loc: 'Kunshan Factory',
+    careers_cta_p: "Don't see a matching role? We welcome proactive applications from talented individuals!", careers_cta_btn: 'Send Resume',
     hero_eyebrow: '25+ Years of Thermal Expertise',
     hero_h1:      'Driving Technology\'s Core,<br/>Cooling Infinite Possibilities',
     hero_sub:     'Kipotec has specialized in thermal management for over 25 years — from notebook cooling modules to server liquid cooling systems — delivering high-efficiency, lightweight, and low-carbon heat solutions to the world\'s leading electronics brands.',

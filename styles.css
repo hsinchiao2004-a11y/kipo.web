@@ -817,3 +817,74 @@ textarea { resize: vertical; min-height: 110px; }
   transition: background 0.2s;
 }
 .lightbox-close:hover { background: rgba(255,255,255,0.3); }
+
+/* ── Intel × Kipo Banner ── */
+.intel-collab {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+  border: 1px solid rgba(37,99,235,0.2);
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  margin: 2.5rem 0 2rem;
+}
+.intel-badge { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.75rem; }
+.ib-kipo { font-weight: 800; font-size: 1.3rem; color: #0f172a; letter-spacing: -0.02em; }
+.ib-x { color: var(--text-dim); font-size: 1.1rem; }
+.ib-intel { font-style: italic; font-weight: 700; font-size: 1.3rem; color: #0071c5; }
+.intel-collab-left h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+.intel-collab-left p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.75rem; }
+.intel-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.intel-tags span { background: rgba(37,99,235,0.1); color: var(--accent-hi); font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: 20px; font-family: var(--mono); }
+.intel-collab-right { display: flex; flex-direction: column; align-items: center; gap: 1rem; min-width: 220px; }
+.intel-stat-block { text-align: center; }
+.intel-stat-val { display: block; font-size: 2.5rem; font-weight: 800; color: var(--accent); font-family: var(--mono); line-height: 1; }
+.intel-stat-unit { display: block; font-size: 0.78rem; color: var(--text-muted); margin-top: 0.25rem; }
+.intel-dm-img { width: 200px; height: 140px; object-fit: cover; border-radius: 8px; cursor: zoom-in; border: 1px solid var(--border-hi); }
+
+/* ── Product Tabs ── */
+.prod-tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 0 0 1.5rem; border-bottom: 2px solid var(--border); padding-bottom: 0; }
+.ptab {
+  background: none; border: none; border-bottom: 2px solid transparent;
+  margin-bottom: -2px; padding: 0.6rem 1.2rem; font-size: 0.9rem; font-weight: 600;
+  color: var(--text-muted); cursor: pointer; transition: color 0.2s, border-color 0.2s;
+  font-family: var(--sans);
+}
+.ptab:hover { color: var(--text); }
+.ptab.active { color: var(--accent); border-bottom-color: var(--accent); }
+.ptab-content { display: none; }
+.ptab-content.active { display: block; }
+.prod-series-title { font-size: 1rem; font-weight: 700; color: var(--text); margin: 1.5rem 0 0.75rem; font-family: var(--mono); letter-spacing: 0.04em; text-transform: uppercase; }
+
+/* ── Spec Table ── */
+.spec-table-wrap { overflow-x: auto; margin-bottom: 1rem; border-radius: var(--radius); border: 1px solid var(--border-hi); }
+.spec-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.spec-table th { background: var(--accent); color: #fff; padding: 0.6rem 1rem; text-align: left; font-weight: 600; white-space: nowrap; }
+.spec-table td { padding: 0.55rem 1rem; border-bottom: 1px solid var(--border); color: var(--text-muted); }
+.spec-table td:first-child { font-weight: 600; color: var(--text); background: var(--bg2); white-space: nowrap; }
+.spec-table tr:last-child td { border-bottom: none; }
+.spec-table tr:hover td { background: var(--bg3); }
+.spec-table tr:hover td:first-child { background: var(--bg3); }
+
+.dm-link-row { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.25rem; }
+.dm-thumb { width: 180px; height: 120px; object-fit: cover; border-radius: 8px; cursor: zoom-in; border: 1px solid var(--border-hi); transition: transform 0.2s; }
+.dm-thumb:hover { transform: scale(1.04); }
+
+/* ── Careers ── */
+#careers { background: var(--bg2); padding: 5rem 0; }
+.careers-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; margin: 2.5rem 0 2rem; }
+.career-card {
+  background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 1.5rem; display: flex; gap: 1rem; align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.career-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); transform: translateY(-2px); }
+.career-icon { font-size: 1.6rem; line-height: 1; flex-shrink: 0; margin-top: 0.1rem; }
+.career-body h3 { font-size: 1rem; margin-bottom: 0.25rem; }
+.career-loc { font-size: 0.8rem; color: var(--accent-hi); font-family: var(--mono); margin-bottom: 0.6rem; }
+.career-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; list-style: none; padding: 0; }
+.career-tags li { background: var(--bg3); color: var(--text-muted); font-size: 0.73rem; padding: 0.2rem 0.55rem; border-radius: 20px; font-family: var(--mono); }
+.careers-cta { text-align: center; padding: 2rem; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); }
+.careers-cta p { color: var(--text-muted); margin-bottom: 1rem; }
