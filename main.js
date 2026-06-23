@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', initLang);
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.style.background = window.scrollY > 20
-    ? 'rgba(8,12,20,0.97)'
-    : 'rgba(8,12,20,0.85)';
+    ? 'rgba(255,255,255,0.97)'
+    : 'rgba(255,255,255,0.85)';
 }, { passive: true });
 
 // Mobile menu
