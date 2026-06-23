@@ -91,6 +91,8 @@ const TRANSLATIONS = {
     office3:     '昆山廠',
     office3_addr:'江蘇省昆山市周市鎮橫新涇路88號',
     office3_tel: '+86-512-57639568',
+    contact_email:      'howard@kipotec.com.tw',
+    contact_email_href: 'mailto:howard@kipotec.com.tw',
     form_name:        '姓名',
     form_name_ph:     '王大明',
     form_company:     '公司',
@@ -199,6 +201,8 @@ const TRANSLATIONS = {
     office3:     '昆山厂',
     office3_addr:'江苏省昆山市周市镇横新泾路88号',
     office3_tel: '+86-512-57639568',
+    contact_email:      'sales@kipotec.com.tw',
+    contact_email_href: 'mailto:sales@kipotec.com.tw',
     form_name:        '姓名',
     form_name_ph:     '王大明',
     form_company:     '公司',
@@ -305,6 +309,8 @@ const TRANSLATIONS = {
     office3:     'Kunshan Factory',
     office3_addr:'No.88 Hengxinjing Rd., Zhoushi, Kunshan, Jiangsu',
     office3_tel: '+86-512-57639568',
+    contact_email:      'howard@kipotec.com.tw',
+    contact_email_href: 'mailto:howard@kipotec.com.tw',
     form_name:        'Name',
     form_name_ph:     'John Smith',
     form_company:     'Company',
@@ -365,6 +371,12 @@ function applyLang(lang) {
   document.querySelectorAll('[data-i18n-ph]').forEach(el => {
     const key = el.getAttribute('data-i18n-ph');
     if (t[key]) el.placeholder = t[key];
+  });
+
+  // Apply href translations (e.g. mailto links that change per locale)
+  document.querySelectorAll('[data-i18n-href]').forEach(el => {
+    const key = el.getAttribute('data-i18n-href');
+    if (t[key]) el.href = t[key];
   });
 
   // Apply select options
