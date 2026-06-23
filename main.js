@@ -1,3 +1,6 @@
+// Init i18n on load
+document.addEventListener('DOMContentLoaded', initLang);
+
 // Nav scroll effect
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
@@ -54,10 +57,12 @@ if (tempVal) {
 function handleSubmit(e) {
   e.preventDefault();
   const btn = document.getElementById('submitBtn');
-  btn.textContent = '傳送中...';
+  const sending = { 'zh-TW': '傳送中...', 'zh-CN': '传送中...', 'en': 'Sending...' };
+  const sent = { 'zh-TW': '已送出！我們將盡快回覆您', 'zh-CN': '已送出！我们将尽快回复您', 'en': 'Sent! We\'ll reply soon.' };
+  btn.textContent = sending[currentLang] || sending['zh-TW'];
   btn.disabled = true;
   setTimeout(() => {
-    btn.textContent = '已送出！我們將盡快回覆您';
+    btn.textContent = sent[currentLang] || sent['zh-TW'];
     btn.style.background = '#16a34a';
     e.target.reset();
   }, 1200);
