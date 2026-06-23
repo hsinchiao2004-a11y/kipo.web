@@ -798,7 +798,7 @@ textarea { resize: vertical; min-height: 110px; }
 .ib-intel { font-style: italic; font-weight: 700; font-size: 2.8rem; color: #0071c5; }
 .intel-collab-left h3 { font-size: 1.3rem; margin-bottom: 0.5rem; margin-top: -0.75rem; }
 .intel-collab-left p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 0.75rem; }
-.intel-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.intel-tags { display: flex; flex-wrap: wrap; gap: 0.6rem 0.5rem; }
 .intel-tags span { background: rgba(37,99,235,0.1); color: var(--accent-hi); font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: 20px; font-family: var(--mono); display: flex; align-items: center; height: 1.75rem; }
 .intel-collab-right { display: flex; flex-direction: column; align-items: center; gap: 1rem; min-width: 220px; }
 .intel-stat-block { text-align: center; }
