@@ -426,7 +426,7 @@ const TRANSLATIONS = {
 
 // HTML keys (use innerHTML)
 const HTML_KEYS = new Set([
-  'hero_h1', 'tech2_stat', 'footer_tagline'
+  'hero_h1', 'tech2_stat', 'footer_tagline', 'm3_label'
 ]);
 
 let currentLang = localStorage.getItem('kipo-lang') || 'zh-TW';
