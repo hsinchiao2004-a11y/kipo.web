@@ -324,7 +324,7 @@ const TRANSLATIONS = {
     job6_title: 'Automation Engineer',         job6_loc: 'Kunshan Factory',
     careers_cta_p: "Don't see a matching role? We welcome proactive applications from talented individuals!", careers_cta_btn: 'Send Resume',
     hero_eyebrow: '25+ Years of Thermal Expertise',
-    hero_h1:      'Driving Technology\'s Core<br/>Cooling Infinite Possibilities',
+    hero_h1:      'Powering Tech,<br/>Cooling Possibility',
     hero_sub:     'Kipotec has specialized in thermal management for over 25 years — from notebook cooling modules to server liquid cooling systems — delivering high-efficiency, lightweight, and low-carbon heat solutions to the world\'s leading electronics brands.',
     hero_cta1:    'Contact Sales',
     hero_cta2:    'View Products',
