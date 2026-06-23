@@ -595,6 +595,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
 
 /* Contact multi-office */
 .office-block { margin-bottom: 1.5rem; }
+.office-company { font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem; margin-top: -0.4rem; }
 .office-block:last-child { margin-bottom: 0; }
 .office-title {
   font-size: 0.82rem;
