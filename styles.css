@@ -377,7 +377,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
   background: var(--bg);
 }
 .tech-header { margin-bottom: 2.5rem; }
-.tech-header h2 { margin-bottom: 0.75rem; }
+.tech-header h2 { margin-bottom: 2rem; }
 .tech-bento {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
