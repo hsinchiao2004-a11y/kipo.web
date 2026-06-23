@@ -812,7 +812,7 @@ textarea { resize: vertical; min-height: 110px; }
   background: none; border: none; border-bottom: 2px solid transparent;
   margin-bottom: -2px; padding: 0.6rem 1.2rem; font-size: 0.9rem; font-weight: 600;
   color: var(--text-muted); cursor: pointer; transition: color 0.2s, border-color 0.2s;
-  font-family: var(--sans);
+  font-family: var(--sans); white-space: nowrap;
 }
 .ptab:hover { color: var(--text); }
 .ptab.active { color: var(--accent); border-bottom-color: var(--accent); }
