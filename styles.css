@@ -819,6 +819,7 @@ textarea { resize: vertical; min-height: 110px; }
 .ptab-content { display: none; }
 .ptab-content.active { display: block; }
 .prod-series-title { font-size: 1rem; font-weight: 700; color: var(--text); margin: 1.5rem 0 0.75rem; font-family: var(--mono); letter-spacing: 0.04em; text-transform: uppercase; }
+.prod-desc { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0.5rem 0 1.5rem; }
 
 /* ── Spec Table ── */
 .spec-table-wrap { overflow-x: auto; margin-bottom: 1rem; border-radius: var(--radius); border: 1px solid var(--border-hi); }
