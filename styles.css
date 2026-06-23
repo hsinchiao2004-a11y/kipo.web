@@ -318,7 +318,9 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0;
+  align-items: center;
+  text-align: center;
 }
 .metric-num { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.03em; color: var(--text); }
 .metric-label { font-size: 0.72rem; color: var(--text-muted); font-family: var(--mono); }
