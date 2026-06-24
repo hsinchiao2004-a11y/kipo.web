@@ -486,6 +486,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
   padding: 7rem 0;
   background: var(--bg);
 }
+#about .section-inner > h2 { margin-bottom: 1.5rem; }
 .about-intro { color: var(--text-muted); font-size: 0.95rem; line-height: 1.75; margin-bottom: 3rem; max-width: 700px; }
 .about-certs-title { font-size: 1.4rem; font-weight: 700; color: var(--text); margin-bottom: 1.5rem; }
 .about-certs {
