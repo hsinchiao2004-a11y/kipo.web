@@ -19,6 +19,8 @@
   --nav-h:     112px;
 }
 
+section[id] { scroll-margin-top: var(--nav-h); }
+
 html { scroll-behavior: smooth; }
 
 body {
