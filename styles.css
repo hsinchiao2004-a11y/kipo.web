@@ -487,7 +487,8 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
   background: var(--bg);
 }
 #about .section-inner > h2 { margin-bottom: 1.5rem; }
-.careers-tagline { color: var(--accent); font-weight: 600; }
+.careers-tagline { color: var(--accent); font-weight: 600; margin-top: 0.5rem; font-size: 1rem; }
+.careers-sub { color: var(--text-muted); font-size: 1rem; line-height: 1.7; margin-top: 0.75rem; }
 .about-intro { color: var(--text-muted); font-size: 0.95rem; line-height: 1.75; margin-bottom: 3rem; }
 .about-certs-title { font-size: 1.4rem; font-weight: 700; color: var(--text); margin-bottom: 1.5rem; }
 .cert-group { margin-bottom: 2rem; }
