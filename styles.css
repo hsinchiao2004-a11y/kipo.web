@@ -331,7 +331,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
 
 /* ── SOLUTIONS ── */
 #solutions {
-  padding: 6rem 0;
+  padding: 4rem 0;
   background: var(--bg2);
 }
 #solutions h2 { margin-bottom: 2rem; }
@@ -378,7 +378,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
 
 /* ── TECHNOLOGY ── */
 #technology {
-  padding: 6rem 0;
+  padding: 4rem 0;
   background: var(--bg);
 }
 .tech-header { margin-bottom: 2.5rem; }
@@ -425,7 +425,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
 
 /* ── SPECS ── */
 #specs {
-  padding: 6rem 0;
+  padding: 4rem 0;
   background: var(--bg2);
 }
 #specs h2 { margin-bottom: 3rem; }
@@ -483,7 +483,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
 
 /* ── ABOUT ── */
 #about {
-  padding: 6rem 0;
+  padding: 4rem 0;
   background: var(--bg);
 }
 #about .section-inner > h2 { margin-bottom: 1.5rem; }
@@ -597,7 +597,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
 
 /* ── CLIENTS ── */
 #clients {
-  padding: 6rem 0;
+  padding: 4rem 0;
   background: var(--bg);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -623,7 +623,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
 
 /* ── CTA BAND ── */
 #cta-band {
-  padding: 6rem 0;
+  padding: 4rem 0;
   background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
   border-top: 1px solid rgba(37,99,235,0.2);
   border-bottom: 1px solid rgba(37,99,235,0.2);
@@ -639,7 +639,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
 .cta-band-inner p { color: var(--text-muted); max-width: 48ch; font-size: 0.95rem; }
 
 /* ── CONTACT ── */
-#contact { padding: 6rem 0; background: var(--bg2); }
+#contact { padding: 4rem 0; background: var(--bg2); }
 .contact-layout { display: grid; grid-template-columns: 1fr 1.3fr; gap: 5rem; align-items: start; }
 .contact-info h2 { margin-bottom: 1rem; }
 .contact-info > p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 2rem; }
@@ -856,7 +856,7 @@ textarea { resize: vertical; min-height: 110px; }
 .dm-thumb:hover { transform: scale(1.04); }
 
 /* ── Careers ── */
-#careers { background: var(--bg2); padding: 6rem 0; }
+#careers { background: var(--bg2); padding: 4rem 0; }
 .careers-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; margin: 2.5rem 0 2rem; }
 .career-card {
   background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius);
