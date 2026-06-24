@@ -493,7 +493,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
 .about-content { max-width: 380px; }
 .about-certs-title { font-size: 1.4rem; font-weight: 700; color: var(--text); margin-bottom: 1.5rem; }
 .about-content h2 { margin-bottom: 1.25rem; }
-.about-content p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.75; margin-bottom: 1rem; }
+.about-content p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.75; margin-bottom: 0; }
 .about-certs {
   margin-top: 2rem;
   background: var(--bg3);
