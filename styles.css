@@ -486,17 +486,8 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
   padding: 7rem 0;
   background: var(--bg);
 }
-.about-layout {
-  display: grid;
-  grid-template-columns: 0.6fr 1.4fr;
-  gap: 4rem;
-  align-items: start;
-}
-.about-content { max-width: 380px; }
 .about-intro { color: var(--text-muted); font-size: 0.95rem; line-height: 1.75; margin-bottom: 3rem; max-width: 700px; }
 .about-certs-title { font-size: 1.4rem; font-weight: 700; color: var(--text); margin-bottom: 1.5rem; }
-.about-content h2 { margin-bottom: 1.25rem; }
-.about-content p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.75; margin: 0; }
 .about-certs {
   margin-top: 2rem;
   background: var(--bg3);
@@ -731,7 +722,6 @@ textarea { resize: vertical; min-height: 110px; }
   .thermal-viz { max-width: 420px; }
   .specs-layout { grid-template-columns: 1fr; }
   .specs-aside { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-  .about-layout { grid-template-columns: 1fr; gap: 3rem; }
   .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
 }
