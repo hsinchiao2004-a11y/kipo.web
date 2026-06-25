@@ -54,18 +54,40 @@ if (tempVal) {
 }
 
 // Contact form handler
-function handleSubmit(e) {
+async function handleSubmit(e) {
   e.preventDefault();
   const btn = document.getElementById('submitBtn');
   const sending = { 'zh-TW': '傳送中...', 'zh-CN': '传送中...', 'en': 'Sending...' };
   const sent = { 'zh-TW': '已送出！我們將盡快回覆您', 'zh-CN': '已送出！我们将尽快回复您', 'en': 'Sent! We\'ll reply soon.' };
+  const failed = { 'zh-TW': '送出失敗，請稍後再試', 'zh-CN': '送出失败，请稍后再试', 'en': 'Failed, please try again.' };
+
   btn.textContent = sending[currentLang] || sending['zh-TW'];
   btn.disabled = true;
-  setTimeout(() => {
+
+  const form = e.target;
+  const data = {
+    name: form.name.value,
+    company: form.company.value,
+    email: form.email.value,
+    product: form.product.value,
+    message: form.message.value,
+  };
+
+  try {
+    const res = await fetch('http://localhost:3000/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+    if (!res.ok) throw new Error();
     btn.textContent = sent[currentLang] || sent['zh-TW'];
     btn.style.background = '#16a34a';
-    e.target.reset();
-  }, 1200);
+    form.reset();
+  } catch {
+    btn.textContent = failed[currentLang] || failed['zh-TW'];
+    btn.style.background = '#dc2626';
+    btn.disabled = false;
+  }
 }
 
 // Cert lightbox

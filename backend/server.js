@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
@@ -65,7 +66,7 @@ app.post('/api/contact', async (req, res) => {
 
     await transporter.sendMail({
       from: `"KIPO 官網" <${process.env.MAIL_USER}>`,
-      to: 'howard@kipotec.com.tw',
+      to: 'hsinchiao2004@gmail.com',
       subject: `【新詢問】${name}（${company || '無公司'}）`,
       html: `
         <h2>新聯絡表單詢問</h2>
