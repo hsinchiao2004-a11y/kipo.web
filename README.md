@@ -78,14 +78,22 @@ cd backend
 npm install
 ```
 
-**第二步：設定環境變數**
+**第二步：設定 Gmail 應用程式密碼**
+
+> 每個人需要用自己的 Gmail 帳號設定，步驟如下：
+> 1. 登入 [myaccount.google.com/security](https://myaccount.google.com/security)
+> 2. 開啟「兩步驟驗證」
+> 3. 搜尋「應用程式密碼」→ 建立新密碼（名稱隨意，例如 `KIPO`）
+> 4. 複製產生的 16 位密碼備用
+
+**第三步：設定環境變數**
 ```bash
 cp .env.example .env
 ```
-編輯 `.env`：
+編輯 `.env`，填入自己的 Gmail 帳號與應用程式密碼：
 ```
 MAIL_USER=your_gmail@gmail.com
-MAIL_PASS=your_app_password   # Gmail 應用程式密碼
+MAIL_PASS=your_app_password   # 剛才複製的 16 位密碼
 PORT=3000
 ```
 
