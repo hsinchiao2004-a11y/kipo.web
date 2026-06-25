@@ -204,6 +204,7 @@ h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -0.015em; }
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  margin-left: auto;
 }
 .nav-links a {
   font-size: 0.88rem;
